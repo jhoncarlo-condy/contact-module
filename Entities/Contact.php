@@ -10,9 +10,9 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [];
-    
+
     protected static function newFactory()
     {
-        return \Modules\Contact\Database\factories\ContactFactory::new();
+        // return \Modules\Contact\Database\factories\ContactFactory::new();
     }
 }
