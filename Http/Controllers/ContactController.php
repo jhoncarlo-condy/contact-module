@@ -2,10 +2,13 @@
 
 namespace Modules\Contact\Http\Controllers;
 
-use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Contact\Entities\Contact;
+use Modules\Contact\Actions\CreateContactAction;
+use Modules\Contact\Transformers\ContactResource;
 use Modules\Contact\Http\Requests\CreateContactRequest;
+use Modules\Contact\DataTransferObjects\CreateContactData;
 
 class ContactController extends Controller
 {
@@ -17,18 +20,20 @@ class ContactController extends Controller
         ]);
     }
 
-    public function store()
+    public function store(
+        CreateContactRequest $request,
+        CreateContactAction $action
+    )
     {
-            return response()->json([
-                'message' => 'store'
-            ]);
+        $data = CreateContactData::fromCreateRequest($request);
+        $result = $action($data);
+
+        return response()->json(new ContactResource($result));
     }
 
-    public function show($id)
+    public function show(Contact $contact)
     {
-        return response()->json([
-            'message' => 'show'
-        ]);
+        return response()->json(new ContactResource($contact));
     }
 
     public function update(Request $request, $id)

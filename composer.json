@@ -22,6 +22,7 @@
     },
     "type" : "laravel-module",
     "require": {
-        "cxndy/contactinfo-module": "dev-master"
+        "cxndy/contactinfo-module": "dev-master",
+        "spatie/data-transfer-object": "^3.8"
     }
 }
