@@ -22,7 +22,7 @@ class ContactController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * @param Request $request
+     * @param CreateContactRequest $request
      * @return Renderable
      */
     public function store(CreateContactRequest $request)
