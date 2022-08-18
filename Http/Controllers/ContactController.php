@@ -17,9 +17,11 @@ class ContactController extends Controller
         ]);
     }
 
-    public function store(CreateContactRequest $request)
+    public function store()
     {
-        dd('store');
+            return response()->json([
+                'message' => 'store'
+            ]);
     }
 
     public function show($id)

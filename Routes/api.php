@@ -20,4 +20,4 @@ use Modules\Contact\Http\Controllers\ContactController;
 // });
 
 
-Route::apiResource('contact',ContactController::class);
+Route::apiResource('contacts',ContactController::class);
