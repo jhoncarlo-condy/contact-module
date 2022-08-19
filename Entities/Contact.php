@@ -10,7 +10,10 @@ class Contact extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    const TYPE_EMAIL = 'email';
+    const TYPE_PHONE = 'phone';
+
+    protected $guarded = ['id'];
 
     public $relationships = ['contactInfos'];
 
