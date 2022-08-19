@@ -4,49 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2af941d430e7e834691221ca6e43a771",
+    "content-hash": "c317b5d3ac642fa6205f38d1a9fee69c",
     "packages": [
-        {
-            "name": "cxndy/contactinfo-module",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jhoncarlo-condy/contactinfo-module.git",
-                "reference": "beaa91b4fe39a37b663063d0cc7364efd8057ea0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jhoncarlo-condy/contactinfo-module/zipball/beaa91b4fe39a37b663063d0cc7364efd8057ea0",
-                "reference": "beaa91b4fe39a37b663063d0cc7364efd8057ea0",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "laravel-module",
-            "extra": {
-                "laravel": {
-                    "providers": [],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Modules\\ContactInfo\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Jhon Carlo Condy",
-                    "email": "jhoncarlo.condy@gmail.com"
-                }
-            ],
-            "description": "Contact Info Laravel Module for Apps",
-            "support": {
-                "issues": "https://github.com/jhoncarlo-condy/contactinfo-module/issues",
-                "source": "https://github.com/jhoncarlo-condy/contactinfo-module/tree/master"
-            },
-            "time": "2022-08-18T13:08:33+00:00"
-        },
         {
             "name": "spatie/data-transfer-object",
             "version": "3.8.1",
@@ -114,9 +73,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cxndy/contactinfo-module": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
