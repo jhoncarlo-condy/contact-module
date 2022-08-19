@@ -3,7 +3,7 @@
 namespace Modules\Contact\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\ContactInfo\Entities\ContactInfo;
+use Modules\Contact\Entities\ContactInfo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Contact extends Model
