@@ -20,7 +20,7 @@ class ContactResource extends JsonResource
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
             'title' => $this->title,
-            'contact_infos' => ContactInfoResource::collection($this->contact_infos),
+            'contact_infos' => ContactInfoResource::collection($this->contactInfos),
         ];
 
         return $payload;

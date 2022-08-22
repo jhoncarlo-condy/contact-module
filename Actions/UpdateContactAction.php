@@ -3,7 +3,7 @@ namespace Modules\Contact\Actions;
 
 use Modules\Contact\Entities\Contact;
 
-class updateContactAction
+class UpdateContactAction
 {
 
     public function __construct(
