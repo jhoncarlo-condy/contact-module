@@ -27,7 +27,7 @@ class ContactFormRule
             ],
             $this->emailArray($group),
             $this->extraRuleSet($group),
-            $this->eavRule->rules(),
+            // $this->eavRule->rules(),
         );
     }
 
@@ -47,7 +47,7 @@ class ContactFormRule
             $this->emailArray($group),
             $this->extraRuleSet($group),
             $this->extraRuleSetUpdate($group),
-            $this->eavRule->rules()
+            // $this->eavRule->rules()
         );
     }
 
